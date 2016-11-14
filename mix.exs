@@ -14,7 +14,7 @@ defmodule AppsignalElixirExample.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :appsignal]]
   end
 
   # Dependencies can be Hex packages:
@@ -27,6 +27,6 @@ defmodule AppsignalElixirExample.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:appsignal, "~> 0.0"}]
   end
 end
