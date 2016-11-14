@@ -28,3 +28,7 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+
+config :appsignal, :config,
+  name: :appsignal_elixir_example,
+  push_api_key: "00000000-0000-0000-0000-000000000000"
